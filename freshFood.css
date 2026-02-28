@@ -601,7 +601,7 @@ section nav .icon i:hover{
     color: #fac031;
 }
 
-/*-----------footer-------*/
+/*================footer================*/
 footer{
     width:100%;
     padding:30px;
@@ -621,6 +621,9 @@ footer{
 .footer_tag p{
      margin: 10px 0;
 } 
+.footer_tag p:hover{
+  color: #fac031;
+}
 .footer_tag i{
     margin:5px;
     cursor: pointer;
