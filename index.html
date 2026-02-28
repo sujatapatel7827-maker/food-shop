@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Fresh Food</title>
     <link rel="stylesheet" href="freshFood.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
+
 <body>
-   <section>
-      <nav>
-        <div class="logo">
-            <img src="image/logo.png">
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#gallary">Gallary</a></li>
-            <li><a href="#review">Review</a></li>
-            <li><a href="#order">Order</a></li>
-        </ul>
-       <div class="icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-       </div>
-      </nav>
-   </section>
-     <!----------------------------------Home----------------------->
+    <section>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+            <ul  id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallary">Gallary</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </section>
+    <!----------------------------------Home----------------------->
     <div>
         <div class="main" id="home">
-          <div class="main_text">
-            <h1>Got Fresh<span>Food</span><br>in a Easy way</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Non delectus laudantium doloremque quaerat blanditiis 
-              recusandae labore porro fugit fugiat, fuga quod. Ratione 
-              doloribus quis enim architecto rem? Sed, nisi dignissimos. 
-              Non earum rerum, ad iusto voluptatibus amet maxime consequatur beatae.
-            </p>
-            <button href="#" class="main_btn">Order now <i class="fa-solid fa-angle-right"></i></button>
-             
-          </div>
+            <div class="main_text">
+                <h1>Got Fresh<span>Food</span><br>in a Easy way</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Non delectus laudantium doloremque quaerat blanditiis
+                    recusandae labore porro fugit fugiat, fuga quod. Ratione
+                    doloribus quis enim architecto rem? Sed, nisi dignissimos.
+                    Non earum rerum, ad iusto voluptatibus amet maxime consequatur beatae.
+                </p>
+                <button href="#" class="main_btn">Order now <i class="fa-solid fa-angle-right"></i></button>
+
+            </div>
             <div class="img-home">
-               <img src="image/main_img.png">
+                <img src="image/main_img.png">
             </div>
         </div>
-    </div><hr>
-        <!------------- about ----------->
-    <div  class="about" id="about">
+    </div>
+    <hr>
+    <!------------- about ----------->
+    <div class="about" id="about">
         <div class="about-img">
-            <div  class="about-img">
+            <div class="about-img">
                 <img src="image/Food-Plate.png">
             </div>
             <div class="about-text">
                 <h1><span>About</span> Us</h1>
                 <h3>Whay Choos Us?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Cupiditate quod minima id rem ea minus fugit reprehenderit            molestias earum, quae dolor quisquam facere magni fuga 
-                  exercitationem, doloremque unde accusamus quibusdam quaerat 
-                  laudantium voluptatem? Culpa mollitia omnis quia a rem doloribus? 
-                  Voluptates fuga dignissimos natus illum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate quod minima id rem ea minus fugit reprehenderit molestias earum, quae dolor quisquam
+                    facere magni fuga
+                    exercitationem, doloremque unde accusamus quibusdam quaerat
+                    laudantium voluptatem? Culpa mollitia omnis quia a rem doloribus?
+                    Voluptates fuga dignissimos natus illum!
                 </p>
                 <button class="btn">Order now</button>
             </div>
         </div>
-    </div><hr>
+    </div>
+    <hr>
     <!-- ------------muenu -->
     <div class="menu" id="menu">
         <h1>Our<span>Menu</span></h1>
@@ -82,12 +90,12 @@
                 <div class="menu_info">
                     <h2>Buger</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
-                         <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -109,8 +117,8 @@
                 <div class="menu_info">
                     <h2>Pasta</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -136,8 +144,8 @@
                 <div class="menu_info">
                     <h2>Lasagna</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -164,8 +172,8 @@
                 <div class="menu_info">
                     <h2>Drink</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -192,8 +200,8 @@
                 <div class="menu_info">
                     <h2>Pizza</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -220,8 +228,8 @@
                 <div class="menu_info">
                     <h2>Hot Dog</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -248,8 +256,8 @@
                 <div class="menu_info">
                     <h2>Juse</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -276,8 +284,8 @@
                 <div class="menu_info">
                     <h2>Biryani</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -304,8 +312,8 @@
                 <div class="menu_info">
                     <h2>chocolate</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -332,8 +340,8 @@
                 <div class="menu_info">
                     <h2>Ice Cream</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -360,8 +368,8 @@
                 <div class="menu_info">
                     <h2>Spanchi</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -388,8 +396,8 @@
                 <div class="menu_info">
                     <h2>sandwich</h2>
                     <p>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                       Tempore incidunt labore ducimus beatae a nulla.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore incidunt labore ducimus beatae a nulla.
                     </p>
                     <h3>$20.00</h3>
                     <div class="menu_icon">
@@ -403,7 +411,8 @@
                 </div>
             </div>
         </div>
-    </div><hr>
+    </div>
+    <hr>
     <!--------------gallary------------->
     <div class="gallary" id="gallary">
         <h1>Our<span>Gallary</span></h1>
@@ -412,8 +421,8 @@
                 <img src="image/gallary_1.jpg">
                 <h3>Food</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Fugit ea rem nihil praesentium saepe officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ea rem nihil praesentium saepe officiis.
                 </p>
                 <a href="#" class="gallary_btn">Order Now</a>
             </div>
@@ -422,8 +431,8 @@
                 <img src="image/gallary_2.jpg">
                 <h3>Food</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Fugit ea rem nihil praesentium saepe officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ea rem nihil praesentium saepe officiis.
                 </p>
                 <a href="#" class="gallary_btn">Order Now</a>
             </div>
@@ -432,8 +441,8 @@
                 <img src="image/gallary_3.jpg">
                 <h3>Food</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Fugit ea rem nihil praesentium saepe officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ea rem nihil praesentium saepe officiis.
                 </p>
                 <a href="#" class="gallary_btn">Order Now</a>
             </div>
@@ -443,8 +452,8 @@
                 <img src="image/gallary_4.jpg">
                 <h3>Food</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Fugit ea rem nihil praesentium saepe officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ea rem nihil praesentium saepe officiis.
                 </p>
                 <a href="#" class="gallary_btn">Order Now</a>
             </div>
@@ -454,8 +463,8 @@
                 <img src="image/gallary_5.jpg">
                 <h3>Food</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Fugit ea rem nihil praesentium saepe officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ea rem nihil praesentium saepe officiis.
                 </p>
                 <a href="#" class="gallary_btn">Order Now</a>
             </div>
@@ -465,14 +474,15 @@
                 <img src="image/gallary_6.jpg">
                 <h3>Food</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Fugit ea rem nihil praesentium saepe officiis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit ea rem nihil praesentium saepe officiis.
                 </p>
                 <a href="#" class="gallary_btn">Order Now</a>
             </div>
         </div>
-    </div><hr>
-     <!--review  -->
+    </div>
+    <hr>
+    <!--review  -->
     <div class="review" id="review">
         <h1>Customer <span> Review</span></h1>
         <div class="review_box">
@@ -497,13 +507,13 @@
                         <i class="fa-brands fa-linkedin"></i>
                     </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                       Perferendis facere aut dicta veniam quos sint tempora. 
-                       Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio 
-                       voluptate laboriosam reiciendis commodi. Id laborum voluptate 
-                       facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et, 
-                       perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis 
-                       porro quo ex aliquid! At vitae tempore illum quod nam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Perferendis facere aut dicta veniam quos sint tempora.
+                        Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio
+                        voluptate laboriosam reiciendis commodi. Id laborum voluptate
+                        facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et,
+                        perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis
+                        porro quo ex aliquid! At vitae tempore illum quod nam.
                     </p>
                 </div>
             </div>
@@ -528,13 +538,13 @@
                         <i class="fa-brands fa-linkedin"></i>
                     </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                       Perferendis facere aut dicta veniam quos sint tempora. 
-                       Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio 
-                       voluptate laboriosam reiciendis commodi. Id laborum voluptate 
-                       facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et, 
-                       perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis 
-                       porro quo ex aliquid! At vitae tempore illum quod nam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Perferendis facere aut dicta veniam quos sint tempora.
+                        Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio
+                        voluptate laboriosam reiciendis commodi. Id laborum voluptate
+                        facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et,
+                        perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis
+                        porro quo ex aliquid! At vitae tempore illum quod nam.
                     </p>
                 </div>
             </div>
@@ -559,13 +569,13 @@
                         <i class="fa-brands fa-linkedin"></i>
                     </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                       Perferendis facere aut dicta veniam quos sint tempora. 
-                       Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio 
-                       voluptate laboriosam reiciendis commodi. Id laborum voluptate 
-                       facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et, 
-                       perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis 
-                       porro quo ex aliquid! At vitae tempore illum quod nam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Perferendis facere aut dicta veniam quos sint tempora.
+                        Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio
+                        voluptate laboriosam reiciendis commodi. Id laborum voluptate
+                        facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et,
+                        perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis
+                        porro quo ex aliquid! At vitae tempore illum quod nam.
                     </p>
                 </div>
             </div>
@@ -590,23 +600,23 @@
                         <i class="fa-brands fa-linkedin"></i>
                     </div>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                       Perferendis facere aut dicta veniam quos sint tempora. 
-                       Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio 
-                       voluptate laboriosam reiciendis commodi. Id laborum voluptate 
-                       facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et, 
-                       perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis 
-                       porro quo ex aliquid! At vitae tempore illum quod nam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Perferendis facere aut dicta veniam quos sint tempora.
+                        Perspiciatis, eos voluptatem? Quibusdam, corporis distinctio
+                        voluptate laboriosam reiciendis commodi. Id laborum voluptate
+                        facere incidunt magnam laboriosam possimus ab vero, voluptas dolor et,
+                        perspiciatis ad vel sit quibusdam magni molestias unde suscipit quod corporis
+                        porro quo ex aliquid! At vitae tempore illum quod nam.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-     <!-- order -->
+    <!-- order -->
     <div class="order" id="order">
         <h1><span>Order</span>Now</h1>
         <div class="order_main">
-            
+
             <div class="order_image">
                 <img src="image/order_image.png">
             </div>
@@ -621,26 +631,27 @@
                 </div>
                 <div class="input">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="your phone number" >
+                    <input type="tel" id="phone" placeholder="your phone number">
                 </div>
                 <div class="input">
                     <label for="how much">How Much</label>
-                    <input type="text" id="how much"placeholder="how many order">
+                    <input type="text" id="how much" placeholder="how many order">
                 </div>
                 <div class="input">
                     <label for="your order">Your Order</label>
-                    <input type="text"  id="your order"placeholder="food name">
+                    <input type="text" id="your order" placeholder="food name">
                 </div>
                 <div class="input">
                     <label for="address">Address</label>
-                    <input type="text"id="address" placeholder="your address">
+                    <input type="text" id="address" placeholder="your address">
                 </div>
                 <div class="order_btn">
-                   <a type="submit">Order Now</a>
+                    <a type="submit">Order Now</a>
                 </div>
             </form>
         </div>
-    </div><hr>
+    </div>
+    <hr>
 
     <!------------team---------->
     <div class="team">
@@ -704,53 +715,59 @@
                 </div>
             </div>
         </div>
-    </div><hr>
-
-<!--------------footer--------->
-<footer>
-    <div class="footer_main">
-        <div footer_tag>
-          <h2>Location</h2>
-          <p>USA</p>
-          <p>India</p>
-          <p>Japan</p>
-          <p>Italy</p>
-        </div>
-
-        <div footer_tag>
-          <h2>Quiick Link</h2>
-          <p>Home</p>
-          <p>About</p>
-          <p>Menu</p>
-          <p>Gallary</p>
-          <p>Order</p>
-        </div>
-
-        <div footer_tag>
-          <h2>Contact</h2>
-          <p>+94 12 5849 632</p>
-          <p>+94 65 6584 125</p>
-          <p>johndeo123@gmail.com</p>
-          <p>foodshop@gmail.com</p>
-        </div>
-
-        <div footer_tag>
-          <h2>Our Service</h2>
-          <p>Food Delivery</p>
-          <p>Easy payments</p>
-          <p>24*7 Service</p>
-        </div>
-        <div class="footer_tag">
-          <h2>Follows</h2>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-        </div>
     </div>
-    <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i>WT Master code</span></p>
-</footer>
+    <hr>
 
+    <!--------------footer--------->
+    <footer>
+        <div class="footer_main">
+            <div footer_tag>
+                <h2>Location</h2>
+                <p>USA</p>
+                <p>India</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+
+            <div footer_tag>
+                <h2>Quiick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div footer_tag>
+                <h2>Contact</h2>
+                <p>+94 12 5849 632</p>
+                <p>+94 65 6584 125</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop@gmail.com</p>
+            </div>
+
+            <div footer_tag>
+                <h2>Our Service</h2>
+                <p>Food Delivery</p>
+                <p>Easy payments</p>
+                <p>24*7 Service</p>
+            </div>
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i>WT Master code</span></p>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-    
