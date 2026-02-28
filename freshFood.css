@@ -103,12 +103,12 @@ section nav .icon i:hover{
 
 } 
 /* -------about-------- */
-.about {
+.about{
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 50px ;
-  background: #fff;
+  justify-content: space-around;
+  padding: 80px 20px;
+  gap: 40px;
 }
 .about-img {
   flex: 1;
@@ -437,7 +437,7 @@ section nav .icon i:hover{
 .review .review_box .review_card:hover .review_text p{
     margin-top: 5px;
 }
-/*====================order-=================*/
+/*====================order-=============*/
 .order {
     background-size: cover;
     background-position: center;
@@ -448,7 +448,6 @@ section nav .icon i:hover{
     justify-content: center;
     color: #000;
     font-size: 55px;
-   
     margin-bottom: 40px;
 }
 .order h1 span {
@@ -701,24 +700,58 @@ footer{
 
 /*----------about----------*/
 @media (max-width: 992px){
+
   .about{
     flex-direction: column;
     text-align: center;
   }
 
   .about-img img{
-    width: 100%;
-    max-width: 500px;
+    max-width: 400px;
   }
 }
-/* Mobile */
+
 @media (max-width: 600px){
+
+  .about{
+    display: flex;
+    flex-direction: column;   /* column layout */
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* 👇 TEXT PEHLE */
+  .about-text{
+    order: 1;
+    width: 100%;
+  }
+
+  /* 👇 IMAGE BAAD ME */
+  .about-img{
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .about-img img{
+    width: 100%;
+    max-width: 220px;  
+  }
+
   .about-text h1{
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .about-text h3{
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .about-text p{
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 /* ---------menu------------- */
