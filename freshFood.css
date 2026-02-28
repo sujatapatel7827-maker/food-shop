@@ -661,9 +661,32 @@ footer{
   }
 }
 /* Mobile */
-@media (max-width: 600px){
-  section nav{
+@media (max-width: 768px){
+
+  .menu-toggle{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2001;   /* 👈 sabse upar */
+  }
+
+  nav ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 1000;
+  }
+
+  nav ul.active{
+    display: flex;
   }
 }
 /*-----------Home----------- */
@@ -715,19 +738,15 @@ footer{
 
   .about{
     display: flex;
-    flex-direction: column;   /* column layout */
+    flex-direction: column;   
     align-items: center;
     text-align: center;
     padding: 40px 20px;
   }
-
-  /* 👇 TEXT PEHLE */
   .about-text{
     order: 1;
     width: 100%;
   }
-
-  /* 👇 IMAGE BAAD ME */
   .about-img{
     order: 2;
     width: 100%;
