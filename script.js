@@ -1,14 +1,14 @@
 function toggleMenu(){
   const menu = document.getElementById("menu");
-  const toggle = document.querySelector(".menu-toggle i");
+  const icon = document.querySelector(".menu-toggle i");
 
   menu.classList.toggle("active");
 
   if(menu.classList.contains("active")){
-    toggle.classList.remove("fa-bars");
-    toggle.classList.add("fa-xmark");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
   } else {
-    toggle.classList.remove("fa-xmark");
-    toggle.classList.add("fa-bars");
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
   }
 }
