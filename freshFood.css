@@ -1,0 +1,629 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+section{
+    width:100px;
+    height:100px;
+}
+section nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    position:fixed;
+    right:0;
+    left:0;
+    background:white;
+    box-shadow:0 0 10px black;
+    z-index:1000;
+}
+section nav .logo img{
+    width:100px;
+    cursor:pointer;
+    margin:7px 0;
+}
+section nav ul {
+    list-style:none;
+}
+section nav ul li{
+    display:inline-block;
+    margin:15px;
+}
+section nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:17px;
+}
+section nav ul li a:hover{
+    color: #fac031;
+}
+section nav .icon i{
+    font-size: 18px;
+    margin:0 5px;
+    cursor: pointer;
+}
+section nav .icon i:hover{
+    color: rgb(194, 194, 9);
+}
+
+/*----------------------------------home-----------------*/
+.main{
+    padding: 70px;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 80px;
+}
+.main_text h1{
+    font-size: 60px;
+    position: relative;
+    margin-top: 40px;
+}
+.main_text h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    line-height: 22px;
+    font-family: mv boli;
+    font-size: 70px;
+}
+.main .img-home img{
+    width:600px;
+    position: relative;
+}
+.main_text p{
+    width: 650px;
+    margin-left:15px;
+    margin-top: 50px;
+    line-height: 25px;
+}
+.main_btn{
+    background: #fac031;
+    margin-left:15px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+.main_btn i{
+    color: #020202;
+    transition: 0.3s;
+}
+.main_btn:hover i{
+    transform: translateX(7px);
+
+} 
+/* --about---- */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px ;
+  background: #fff;
+}
+.about-img {
+  flex: 1;
+  display: flex;
+}
+.about-img img {
+  width:700px;
+  height: auto;
+}
+.about-text {
+   margin-top:50px;
+   flex: 1;
+}
+.about-text h1 {
+  font-size: 50px;
+  margin-bottom:50px;
+}
+.about-text h1 span {
+  color: orange;
+  font-family: mv boli;
+}
+.about-text h3 {
+  font-size:30px;
+  margin: 0 0 50px 0;
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 25px;
+}
+.btn {
+  background: orange;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius:4px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.btn:hover {
+  background: #e68900;
+}
+/*---------------------menu------------- */
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+.menu h1{
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.menu h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    background: #fac031;
+     bottom: 15px;
+}
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.1);
+}
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+.menu .menu_box .menu_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+.menu_box .menu_card .small_card i:hover{
+    color: #db1967d6;
+}
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+.menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color: #fac031;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+/*---------------------gallary---*/
+.gallary {
+  text-align: center;
+  padding: 40px 20px;
+}
+.gallary h1 {
+  font-size:55px;
+  margin-bottom: 40px;
+}
+.gallary h1 span {
+  color: orange;
+  font-family: mv boli;
+}
+.gallary_image_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap:15px;
+}
+.gallary_image {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.gallary_image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+/* Hover zoom */
+.gallary_image:hover img {
+  transform: scale(1.1);
+}
+.gallary_image h3,
+.gallary_image p,
+.gallary_image a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+.gallary_image h3 {
+  top: 20%;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(12, 12, 11);
+}
+.gallary_image p {
+  top: 45%;
+  width: 80%;
+  font-size: 14px;
+}
+.gallary_image a {
+  bottom: 15px;
+  background: orange;
+  padding: 8px 25px;
+  color: #000;
+  text-decoration: none;
+  border-radius:3px;
+}
+.gallary_image:hover h3,
+.gallary_image:hover p,
+.gallary_image:hover a {
+  opacity: 1;
+}
+/* --------------------review----------------- */
+.review{
+    width:100px;
+    height:100px;
+    padding: 70px 0;
+}
+.review h1{
+    font-size: 50px;
+   display: flex;
+    align-items: center;
+    margin-left: 640px;
+}
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+.review h1 span::after{
+    content: '';
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+.review .review_box .review_card{
+    width: 350px;
+    height: 535px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding:8px 20px;
+    margin: 0 8px;
+}
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+.review .review_box .review_card .review_text .name{
+    color: #000;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .name{
+    transform: translateY(-50px);
+}
+.review .review_box .review_card .review_text .review_icon{
+    color: #fac031;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .review_icon{
+    transform: translateY(-30px);
+}
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .review_social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    width:316px;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+}
+/*----------------------order*/
+.order {
+    background-size: cover;
+    background-position: center;
+}
+.order h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+    margin-top:46%;
+    margin-bottom: 40px;
+}
+.order h1 span {
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli, cursive;
+}
+.order h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.order .order_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.order .order_main .order_image img {
+    width: 550px;
+    max-width: 100%;
+}
+.order .order_main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.order .order_main form .input label {
+    margin-bottom: 5px;
+}
+.order .order_main form .input {
+    flex-direction: column;
+}
+.order .order_main form .input input {
+    width: 100%;
+    height: 40px;
+    padding: 0 30px;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+}
+.order .order_main form .input input:focus {
+    border: 2px solid #fac031;
+    background: #fff;
+}
+.order .order_main form .order_btn a {
+    display: inline-block;
+    padding: 12px 40px;
+    background: #fac031;
+    color: white;
+    border-radius: 5px;
+}
+.order .order_main form .order_btn a:hover {
+    background: #e6a800;
+}
+
+
+/*----------- team----------*/
+.team{
+    width: 100%;
+    height:100%;
+    padding:65px;
+    background-size: cover;
+    background-position: center;
+}
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+.team h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.team .team_box{
+    width: 95%;
+    margin-top:120px;
+    margin-bottom: 30px;
+    gap: 15px;
+    display:flex;
+    justify-content: center;
+}
+.team .team_box .profile{
+    width:290px;
+    height:290px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow:0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+.team .team_box .profile:hover{
+    border-radius: 20px;
+}
+.team .team_box .profile img{
+    width:220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    box-shadow:0 0 8px rgba(0,0,0,0.5);
+    z-index:999;
+    transition: 0.4s;
+}
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px; 
+}
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    transition: 0.4s;    
+}
+.team .team_box .profile:hover .info{
+    top:50%;
+}
+.team .team_box .profile .info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+}
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+.team .team_box .profile .info .team_icon i{
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+    transition: .03s;
+}
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac031;
+}
+
+/*-----------footer-------*/
+footer{
+    width:100%;
+    padding:30px;
+    background-color: #faf2f2;
+}
+.footer_main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_tag{
+    text-align: center;
+}
+.footer_tag h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}   
+.footer_tag p{
+     margin: 10px 0;
+} 
+.footer_tag i{
+    margin:5px;
+    cursor: pointer;
+}
+.footer_tag i:hover{
+    color: #fac031;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    margin-right:95px;
+}
+.end span{
+    color: #fac031;
+    margin-left: 10px;
+}
